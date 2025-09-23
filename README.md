@@ -1,42 +1,46 @@
 # Sistema de Criptografia com DES em Python
-Este projeto foi desenvolvido para a disciplina de Segurança e Auditoria de Sistemas. A implementação original, que utilizava cifras de Transposição e Vigenère, foi modernizada para utilizar o algoritmo DES (Data Encryption Standard), um padrão de cifra simétrica em blocos, para fins educacionais.
+Melhoria do exercício anterior. A implementação original, que utilizava cifras de Transposição e Vigenère, foi modernizada para utilizar o algoritmo DES (Data Encryption Standard).
 
 ## Dependências e Requisitos
-Para executar o projeto, você precisará de:
-
 - Python 3.6 ou superior
 - As bibliotecas listadas no arquivo requirements.txt
 
-Para instalar todas as dependências de uma vez, clone o repositório, navegue até a pasta do projeto pelo terminal e execute o seguinte comando:
-
-```bash
-pip install -r requirements.txt
-```
-
-## Funcionalidades
-O projeto foi unificado em um único script interativo, o main.py, que faz o seguinte:
-
-- Cifra texto: Solicita que o usuário digite um texto e uma senha. O conteúdo criptografado é salvo automaticamente no arquivo cifrado.txt.
-- Decifra texto: Solicita a senha, lê automaticamente o arquivo cifrado.txt e exibe o texto original diretamente na tela do terminal.
-- Sair: Encerra a execução do programa.
-
 ## Como Executar
-Certifique-se de ter o Python 3 e o pip instalados.
-Clone este repositório para a sua máquina.
-Abra um terminal na pasta do projeto e instale as dependências:
+Siga os passos abaixo para configurar e rodar o projeto corretamente.
 
+1. Clone o Repositório
+Primeiro, clone este repositório para a sua máquina local:
+```bash
+git clone <URL_DO_SEU_REPOSITORIO>
+cd <NOME_DA_PASTA_DO_PROJETO>
+```
+
+2. Crie e Ative um Ambiente Virtual
+```bash
+python3 -m venv venv
+```
+3. Ative o ambiente. 
+
+```bash
+source venv/bin/activate
+```
+
+Você saberá que funcionou quando vir (venv) no início do seu terminal.
+
+3. Instale as Dependências
+
+Com o ambiente virtual ativo, faça
 ```bash
 pip install -r requirements.txt
 ```
+4. Execute o Programa
 
-Execute o script principal no terminal:
-
+Finalmente, execute o script principal:
 ```bash
 python main.py
 ```
 
 Siga as instruções exibidas no menu para cifrar ou decifrar seu texto.
-
 
 Arquivos no Projeto
 main.py: Script principal que contém todo o sistema de criptografia e o menu interativo.
