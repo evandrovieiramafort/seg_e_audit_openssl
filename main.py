@@ -1,6 +1,6 @@
 import hashlib
-from Cryptodome.Cipher import DES
-from Cryptodome.Util.Padding import pad, unpad
+from Crypto.Cipher import DES
+from Crypto.Util.Padding import pad, unpad
 
 def derivar_chave(senha: str) -> bytes:
     """Deriva uma chave de 8 bytes a partir da senha usando MD5."""
@@ -46,7 +46,9 @@ def menu_principal():
                 with open(arquivo_saida, 'wb') as f:
                     f.write(dados_cifrados)
                 
-                print(f"\nSucesso! Texto cifrado e salvo no arquivo '{arquivo_saida}'.")
+                print(f"\nSucesso! Texto salvo no arquivo '{arquivo_saida}'.")
+                # Exibe o texto cifrado em tela
+                print(f"Conteúdo cifrado (bytes): {dados_cifrados}")
 
             except Exception as e:
                 print(f"Ocorreu um erro ao cifrar: {e}")
@@ -65,9 +67,11 @@ def menu_principal():
 
                 texto_decifrado = decifrar_dados(dados_cifrados, senha)
                 
-                print("\n--- Texto Decifrado ---")
-                print(texto_decifrado)
-                print("-----------------------")
+                # Exibe o conteúdo cifrado e o decifrado
+                print("\n--- Processo de Decifragem Concluído ---")
+                print(f"Conteúdo cifrado lido do arquivo: {dados_cifrados}")
+                print(f"Texto decifrado: {texto_decifrado}")
+                print("-----------------------------------------")
 
             except FileNotFoundError:
                 print(f"\nErro: O arquivo '{arquivo_entrada}' não foi encontrado. Cifre um texto primeiro.")
