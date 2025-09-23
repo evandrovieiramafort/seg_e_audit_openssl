@@ -1,5 +1,5 @@
 # Sistema de Criptografia com DES em Python
-Melhoria do exercício anterior. A implementação original, que utilizava cifras de Transposição e Vigenère, foi modernizada para utilizar o algoritmo DES (Data Encryption Standard).
+Melhoria do exercício anterior. A implementação original, que utilizava cifras de Transposição e Vigenère, foi modernizada para utilizar o algoritmo DES (Data Encryption Standard). **Obviamente** a implementação não foi na mão, sendo utilizada ao invés disso a biblioteca ```pycryptodome```.
 
 ## Dependências e Requisitos
 - Python 3.6 ou superior
