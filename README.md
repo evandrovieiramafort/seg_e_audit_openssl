@@ -6,10 +6,8 @@ Melhoria do exercício anterior. A implementação original, que utilizava cifra
 - As bibliotecas listadas no arquivo requirements.txt
 
 ## Como Executar
-Siga os passos abaixo para configurar e rodar o projeto corretamente.
 
 1. Clone o Repositório
-Primeiro, clone este repositório para a sua máquina local:
 ```bash
 git clone <URL_DO_SEU_REPOSITORIO>
 cd <NOME_DA_PASTA_DO_PROJETO>
@@ -25,7 +23,7 @@ python3 -m venv venv
 source venv/bin/activate
 ```
 
-Você saberá que funcionou quando vir (venv) no início do seu terminal.
+Você saberá que funcionou quando vir (venv) no início do terminal.
 
 3. Instale as Dependências
 
@@ -40,11 +38,7 @@ Finalmente, execute o script principal:
 python main.py
 ```
 
-Siga as instruções exibidas no menu para cifrar ou decifrar seu texto.
-
-Arquivos no Projeto
-main.py: Script principal que contém todo o sistema de criptografia e o menu interativo.
-
-requirements.txt: Arquivo que lista as dependências do projeto.
-
-cifrado.txt: (Gerado) Arquivo que armazena os dados após o processo de cifragem.
+## Arquivos no Projeto
+- main.py: Script principal que contém todo o sistema de criptografia e o menu interativo.
+- requirements.txt: Arquivo que lista as dependências do projeto.
+- cifrado.txt: (Gerado) Arquivo que armazena os dados após o processo de cifragem.
