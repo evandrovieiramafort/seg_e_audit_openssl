@@ -4,13 +4,16 @@ Melhoria do exercício anterior. Além do uso do algoritmo DES (Data Encryption 
 
 ## Como Executar
 
+
 Execute os 
 ```bash
 git clone <repositorio>
 cd <repositorio>
 mkdir <repositorio>
-iniciar.sh
+./iniciar.sh
 ```
+
+**Atenção**: Se o comando ```./iniciar.sh``` resultar em um "permission denied", use ```chmod +x iniciar.sh``` pra garantir permissão de execução do arquivo.
 
 
 ## Arquivos no Projeto
