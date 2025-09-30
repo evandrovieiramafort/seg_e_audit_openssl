@@ -1,44 +1,24 @@
 # Sistema de Criptografia com DES em Python
-Melhoria do exercício anterior. A implementação original, que utilizava cifras de Transposição e Vigenère, foi modernizada para utilizar o algoritmo DES (Data Encryption Standard). **Obviamente** a implementação não foi na mão, sendo utilizada ao invés disso a biblioteca ```pycryptodome```.
+Melhoria do exercício anterior. Além do uso do algoritmo DES (Data Encryption Standard), agora há o uso do algoritmo AES (Advanced Encryption Standard). **Obviamente** a implementação não foi na mão, sendo utilizada ao invés disso a biblioteca ```pycryptodome``` para ambas as funcionalidades.
 
-## Dependências e Requisitos
-- Python 3.6 ou superior
-- As bibliotecas listadas no arquivo requirements.txt
 
 ## Como Executar
 
-1. Clone o Repositório
+
+Execute os 
 ```bash
-git clone <URL_DO_SEU_REPOSITORIO>
-cd <NOME_DA_PASTA_DO_PROJETO>
+git clone <repositorio>
+cd <repositorio>
+mkdir <repositorio>
+./iniciar.sh
 ```
 
-2. Crie e Ative um Ambiente Virtual
-```bash
-python3 -m venv venv
-```
-3. Ative o ambiente. 
+**Atenção**: Se o comando ```./iniciar.sh``` resultar em um "permission denied", use ```chmod +x iniciar.sh``` pra garantir permissão de execução do arquivo.
 
-```bash
-source venv/bin/activate
-```
-
-Você saberá que funcionou quando vir (venv) no início do terminal.
-
-3. Instale as Dependências
-
-Com o ambiente virtual ativo, faça
-```bash
-pip install -r requirements.txt
-```
-4. Execute o Programa
-
-Finalmente, execute o script principal:
-```bash
-python main.py
-```
 
 ## Arquivos no Projeto
 - main.py: Script principal que contém todo o sistema de criptografia e o menu interativo.
 - requirements.txt: Arquivo que lista as dependências do projeto.
 - cifrado.txt: (Gerado) Arquivo que armazena os dados após o processo de cifragem.
+- aes.py: arquivo contendo o sistema de criptografia e descriptografia AES.
+- des.py: arquivo contendo o sistema de criptografia e descriptografia DES.
